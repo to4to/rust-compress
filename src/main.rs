@@ -17,5 +17,5 @@ fn main(){
 
 
 let mut input=BufReader::new(File::open(args().nth(1).unwrap()).unwrap());
-    
+    let output=File::create(args().nth(2).unwrap()).unwrap();
 }
